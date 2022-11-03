@@ -14,11 +14,11 @@
 
 # Comandos de terminal
 
-1 - `vim --help`: exibe compandos úteis para o vim
-2 - `vim <namefile.ext>`: cria ou abre um arquivo - `vim <namefile.ext> +`: abre o arquivo na última linha - `vim <namefile.ext> +n`: abre o arquivo na linha n - `vim <namefile.ext> +/ABC`: abre o arquivo na primeira ocorrência da palavra ABC
-3 - `vim -o <namefile1.ext> <namefile2.ext>`: abre os arquivos em uma tela em colunas diferentes [para trocar de arquivo usa-se Ctrl+w+w]
-4 - `vimtutor` - pequeno tutorial do vim
-5 - `vimdiff` - mostra a diferença entre dois ou mais arquivos
+- 1 - `vim --help`: exibe compandos úteis para o vim
+- 2 - `vim <namefile.ext>`: cria ou abre um arquivo - `vim <namefile.ext> +`: abre o arquivo na última linha - `vim <namefile.ext> +n`: abre o arquivo na linha n - `vim <namefile.ext> +/ABC`: abre o arquivo na primeira ocorrência da palavra ABC
+- 3 - `vim -o <namefile1.ext> <namefile2.ext>`: abre os arquivos em uma tela em colunas diferentes [para trocar de arquivo usa-se Ctrl+w+w]
+- 4 - `vimtutor` - pequeno tutorial do vim
+- 5 - `vimdiff` - mostra a diferença entre dois ou mais arquivos
 
 # Salvar e sair
 
@@ -61,11 +61,11 @@
 
 ### Comentar múltiplas linhas
 
-1 - Vá para o início da linha a partir de qual será comentada
-2 - Entre no modo de seleção vertical, usando `Ctrl + V`
-3 - Selecione as linhas com o cursor ou use uma movimentação no modo normal (7j para andar para 7 linhas acima)
-4 - Pressione `[SHIFT] + i` para entrar no modo de inserção múltipla
-5 - Insira o caractere necessário para comentar (em `JS`, seria o `//`)
+- 1 - Vá para o início da linha a partir de qual será comentada
+- 2 - Entre no modo de seleção vertical, usando `Ctrl + V`
+- 3 - Selecione as linhas com o cursor ou use uma movimentação no modo normal (7j para andar para 7 linhas acima)
+- 4 - Pressione `[SHIFT] + i` para entrar no modo de inserção múltipla
+- 5 - Insira o caractere necessário para comentar (em `JS`, seria o `//`)
 
 ### Auto indentação
 
@@ -107,3 +107,15 @@ Selecione todo o texto necessário e aperte `==` ou `gg=G` para auto indentar o 
 - `:map <key> <action>` - mapeia um compando para uma tecla personalizada
   - exemplo: `:map <F12> ggVG`=> agora a tecla F12 seleciona todo o texto.
 - `:set textwidth=80` - limita a digitação a 80 colunas
+
+# VimScript (VimL)
+
+Para criar VimScripts, editamos o arquivo de config do vim (ou criamos um, caso não exista no sistema):
+- No mac e linux: `~/.vimrc`
+- No windows: `~/_vimrc`
+
+Toda vez que um arquivo for aberto com o vim, o VimScript aplicará as configurações salvas no vimrc.
+
+Para identificar o `vimrc` no OS, basta usar o comando: `:echo $MYVIMRC` no VI, Vim ou NVim 
+
+No NeoVim o caminho é: `~/.config/nvim`
